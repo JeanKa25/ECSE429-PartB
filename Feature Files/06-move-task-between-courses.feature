@@ -58,7 +58,6 @@ Feature: Move a task between course lists
       { "id": "<todo_id>" }
       """
     Then the response status code should be 404
-    # Optional: verify the todo is NOT linked to the invalid course and can be re-linked later
 
     Examples:
       | todo_title           | from_course | invalid_to_id |
